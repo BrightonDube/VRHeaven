@@ -56,18 +56,12 @@ const Main = styled.div`
     background: linear-gradient(90deg, #beebe9, #bed6f9);
     background-size: cover;
   }
-  .wave::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 218px;
-    background: url(${wave}) no-repeat;
+
+  .team {
+    background: url(${girls}) no-repeat;
     background-size: cover;
-  }
-  .test {
-    background-color: rgba(234, 234, 43, 233, 0.7);
+    position: relative;
+    overflow: hidden;
   }
   .card {
     opacity: 0.8;
@@ -88,9 +82,7 @@ function App() {
           </Section>
 
           {/* Meet the team */}
-          <Section
-            style={{ backgroundImage: `url(${girls}`, backgroundSize: "cover" }}
-          >
+          <Section className="team">
             <Container fluid={true}>
               <h1 className="text-center pt-3" style={{ color: "white" }}>
                 Team
@@ -182,6 +174,13 @@ function App() {
                 </Col>
               </Row>
             </Container>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 235">
+              <path
+                fill="#8ac6d1"
+                fill-opacity="1"
+                d="M0,160L48,170.7C96,181,192,203,288,181.3C384,160,480,96,576,85.3C672,75,768,117,864,160C960,203,1056,245,1152,229.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
           </Section>
         </Main>
         <Footer />
