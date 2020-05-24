@@ -2,24 +2,35 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavigationBar = styled(Navbar)`
-  height: 6rem;
+  height: 5rem;
   font-size: 1.2rem;
   background-color: #ffe3ed !important;
+  .navbar-toggler {
+    background-color: #58b4ae !important;
+    color: #58b4ae !important;
+  }
+  .collapse {
+    background-color: rgba(255, 227, 237, 0.8);
+    padding-left: 1rem;
+  }
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #58b4ae !important;
   }
   .navbar-brand:hover {
     font-size: 1.6rem;
     font-weight: bold;
+    color: #1f4068 !important;
   }
   a {
-    color: #58b4ae;
+    color: #58b4ae !important;
   }
   a:hover {
-    color: #1f4068;
+    color: #1f4068 !important;
     font-size: 1.3rem;
   }
 `;
@@ -29,11 +40,19 @@ export function NavBar() {
     <NavigationBar
       collapseOnSelect
       expand="lg"
-      bg="transparent"
-      variant="success"
+      bg="light"
+      variant="dark"
+      fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#home">VR Heaven</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <FontAwesomeIcon
+            icon="vr-cardboard"
+            size="2x"
+            className="d-inline-block align-top"
+          />
+          <span style={{ color: "palevioletred" }}> VR</span> Heaven
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
