@@ -1,3 +1,4 @@
+
 //jshint esversion: 9
 //modules
 import React from "react";
@@ -20,14 +21,16 @@ import teamMembers from "./components/team";
 
 //images
 import girls from "./images/3_girls_2015_WCF.jpg";
-import wave from "./images/wave.png";
 import baby2 from "./images/baby-2.png";
+import monument from "./images/WCF.WashMonument.jpg";
+import muralm from "./images/mural_making.jpg";
 library.add(fab, faPhone, faMapMarkedAlt, faEnvelope, faGlobe, faVrCardboard);
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
   html, body {
     margin: 0;
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
@@ -35,14 +38,28 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 `;
-//for the wave effect
+
 const Section = styled.section`
   width: 100%;
-  min-height: 700px;
+  min-height: 500px;
+`;
+const ColorOverlay = styled.div`
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(190, 221, 244, 0.4);
+`;
+const Donate = styled(Section)`
+  background: linear-gradient(90deg, #beebe9, #bed6f9);
+  min-height: 300px;
 `;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 `;
@@ -52,17 +69,36 @@ const Main = styled.div`
   padding-top: 5rem;
   .wave {
     position: relative;
-    color: white;
-    background: linear-gradient(90deg, #beebe9, #bed6f9);
-    background-size: cover;
+    height: 100%;
   }
 
   .team {
     background: url(${girls}) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     position: relative;
     overflow: hidden;
+    width: 100%;
   }
+  .home-section {
+    background-image: url(${muralm});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+  .home-text {
+    z-index: 10;
+    color: white;
+    background-color: rgba(88, 180, 174, 0.55);
+    width: 100%;
+    font-size: 2rem;
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
   .card {
     opacity: 0.8;
   }
@@ -75,11 +111,26 @@ function App() {
       <Wrapper>
         <NavBar />
         <Main>
-          <Section className="wave">
-            <Row>
-              <Container></Container>
+          <Section className="home-section">
+            <Row className="wave align-items-center">
+              <div className="home-text text-md-justify mt-3">
+                <Container>
+                  <Col md={8} className="">
+                    <h1>What's Your Idea Of Heaven?</h1>
+                    <p>
+                      Heaven is a powerfully evocative concept with
+                      transcendental connotations for most belief systems, be
+                      they secular or religious.
+                    </p>
+                  </Col>
+                </Container>
+              </div>
+              <ColorOverlay />
             </Row>
           </Section>
+
+          {/* Donate Section */}
+          <Donate></Donate>
 
           {/* Meet the team */}
           <Section className="team">
@@ -133,8 +184,8 @@ function App() {
                             Heaven is released.
                           </li>
                           <li>
-                            to participate in the 6th World Children's Festival
-                            July 31 to August 2, 2020
+                            to participate in the 6th World Children’s Festival
+                            on July 30th – August 1st of 2021.
                           </li>
                           <li>
                             Advisory Board Members serve as pro bono advisers,
@@ -174,6 +225,7 @@ function App() {
                 </Col>
               </Row>
             </Container>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 235">
               <path
                 fill="#8ac6d1"
