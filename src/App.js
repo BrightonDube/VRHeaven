@@ -1,4 +1,3 @@
-
 //jshint esversion: 9
 //modules
 import React from "react";
@@ -21,7 +20,7 @@ import teamMembers from "./components/team";
 
 //images
 import girls from "./images/3_girls_2015_WCF.jpg";
-import baby2 from "./images/baby-2.png";
+import palette from "./images/palette.png";
 import monument from "./images/WCF.WashMonument.jpg";
 import muralm from "./images/mural_making.jpg";
 library.add(fab, faPhone, faMapMarkedAlt, faEnvelope, faGlobe, faVrCardboard);
@@ -82,7 +81,7 @@ const Main = styled.div`
     width: 100%;
   }
   .home-section {
-    background-image: url(${muralm});
+    background-image: url(${palette});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
