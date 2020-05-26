@@ -20,10 +20,15 @@ import Donate from "./components/Donate";
 import Home from "./components/Home";
 import MyCarousel from "./components/Carousel";
 import Event from "./components/Event";
+import Process from "./components/Process";
+import Process2 from "./components/Process2";
 
 //images
 import donate from "./images/Kazakhstan.jpg";
 import logopic from "./images/photowcflogo.jpg";
+import mural from "./images/mural_making.jpg";
+import heaven from "./images/heavenlogojpg.jpg";
+import icaf from "./images/ICAF-logo.1444x636.jpg";
 
 library.add(fab, faPhone, faMapMarkedAlt, faEnvelope, faGlobe, faVrCardboard);
 
@@ -62,9 +67,11 @@ function App() {
           {/* Home Section */}
           <Home />
           <Event image={logopic} />
+          <Process image={mural} />
+          <Process2 image={heaven} />
           <MyCarousel />
           {/* Donate Section */}
-          <Donate donate={donate} />
+          <Donate image={donate} image1={icaf} />
 
           {/* Meet the team */}
           <Team />

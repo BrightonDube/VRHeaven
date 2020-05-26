@@ -61,7 +61,7 @@ const imageData = [
 const Wrapper = styled.div`
   width: 100%;
   min-height: 568px;
-  background: linear-gradient(90deg, tomato, palevioletred);
+  background: #3797a4;
   color: white;
   .carousel-caption,
   .carousel-control-prev-icon,
