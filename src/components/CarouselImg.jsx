@@ -11,7 +11,7 @@ const Img = styled.img`
 export default function CarouselImg({ imageFile, name, location }) {
   return (
     <Img
-      className="d-block w-100 img-responsive"
+      className="d-block w-100 shadow-lg img-responsive"
       src={imageFile}
       alt={(name, location)}
     />

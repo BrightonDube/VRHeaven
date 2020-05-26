@@ -19,9 +19,11 @@ import Team from "./components/Team.jsx";
 import Donate from "./components/Donate";
 import Home from "./components/Home";
 import MyCarousel from "./components/Carousel";
+import Event from "./components/Event";
 
 //images
 import donate from "./images/Kazakhstan.jpg";
+import logopic from "./images/photowcflogo.jpg";
 
 library.add(fab, faPhone, faMapMarkedAlt, faEnvelope, faGlobe, faVrCardboard);
 
@@ -59,6 +61,7 @@ function App() {
         <Main>
           {/* Home Section */}
           <Home />
+          <Event image={logopic} />
           <MyCarousel />
           {/* Donate Section */}
           <Donate donate={donate} />
