@@ -18,6 +18,7 @@ import { NavBar } from "./components/NavBar";
 import Team from "./components/Team.jsx";
 import Donate from "./components/Donate";
 import Home from "./components/Home";
+import MyCarousel from "./components/Carousel";
 
 //images
 import donate from "./images/Kazakhstan.jpg";
@@ -58,7 +59,7 @@ function App() {
         <Main>
           {/* Home Section */}
           <Home />
-
+          <MyCarousel />
           {/* Donate Section */}
           <Donate donate={donate} />
 
