@@ -29,7 +29,8 @@ const NavigationBar = styled(Navbar)`
   a {
     color: #58b4ae !important;
   }
-  a:hover {
+  a:hover,
+  .active {
     color: #1f4068 !important;
     font-size: 1.3rem;
   }
@@ -58,10 +59,9 @@ export function NavBar() {
           <Nav className="ml-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#events">Events</Nav.Link>
-            <Nav.Link href="#process">Creation Process</Nav.Link>
-            <Nav.Link href="#team">Team</Nav.Link>
+            <Nav.Link href="#process">Art Gallery</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#donate">Donate</Nav.Link>
+            <Nav.Link href="#team">Team</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

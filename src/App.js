@@ -33,7 +33,7 @@ import icaf from "./images/ICAF-logo.1444x636.jpg";
 library.add(fab, faPhone, faMapMarkedAlt, faEnvelope, faGlobe, faVrCardboard);
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+ 
   html, body {
     margin: 0;
     width: 100%;
