@@ -30,7 +30,7 @@ const Wrapper = styled.section`
 
 export default function Home() {
   return (
-    <Wrapper as="Section">
+    <Wrapper as="Section" id="home">
       <Row className="wave align-items-center">
         <div className="home-text text-md-justify mt-3">
           <Container>

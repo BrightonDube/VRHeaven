@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const NavigationBar = styled(Navbar)`
   height: 5rem;
@@ -46,22 +47,79 @@ export function NavBar() {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Link
+          className="navbar-brand"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           <FontAwesomeIcon
             icon="vr-cardboard"
             size="2x"
             className="d-inline-block align-top"
           />
           <span style={{ color: "palevioletred" }}> VR</span> Heaven
-        </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#events">Events</Nav.Link>
-            <Nav.Link href="#process">Art Gallery</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#team">Team</Nav.Link>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="events"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Events
+            </Link>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="gallery"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Art Gallery
+            </Link>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About
+            </Link>
+            <Link
+              className="nav-link"
+              activeClass="active"
+              to="team"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Team
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

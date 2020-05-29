@@ -80,7 +80,7 @@ export default function MyCarousel() {
         ></path>
       </svg>{" "}
       <h1 className="pt-3 text-center">Art Gallery</h1>
-      <Carousel style={{}}>
+      <Carousel style={{}} id="gallery">
         {imageData.map((image) => (
           <Carousel.Item>
             <CarouselImg
