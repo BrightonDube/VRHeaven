@@ -47,7 +47,7 @@ export default function Donate({ image, image1 }) {
             </p>{" "}
           </Col>
         </Row>
-        <Row>
+        <Row id="donate">
           <Col className="text-justify">
             <h1 className="text-center">Do you have a Heaven inside you?</h1>
             <h5 className="text-center">

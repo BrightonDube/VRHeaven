@@ -3,6 +3,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Wrapper = styled.footer`
   background-color: #8ac6d1;
@@ -73,16 +74,60 @@ export function Footer() {
             <h4>Quick Links</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="#home">Home</a>
+                <a href="">
+                  <Link
+                    className="nav-link"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Home
+                  </Link>
+                </a>
               </li>
               <li>
-                <a href="#process">Creation Process</a>
+                <a href="#events">
+                  <Link
+                    className="nav-link"
+                    to="events"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Events
+                  </Link>
+                </a>
               </li>
               <li>
-                <a href="#team">Team</a>
+                <a href="#team">
+                  <Link
+                    className="nav-link"
+                    to="team"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Team
+                  </Link>
+                </a>
               </li>
               <li>
-                <a href="#donate">Donate</a>
+                <a href="#donate">
+                  <Link
+                    className="nav-link"
+                    to="donate"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Donate
+                  </Link>
+                </a>
               </li>
             </ul>
           </Col>
