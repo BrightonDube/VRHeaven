@@ -24,7 +24,7 @@ export default function Event({ image }) {
           </Col>
           <Col sm={6}>
             <img
-              className="img-responsive mb-3 d-block w-100 rounded-lg shadow-lg"
+              className="img-responsive mt-4 mb-4 d-block w-100 rounded-lg shadow-lg"
               src={image}
               alt="world children's festival venue"
             />

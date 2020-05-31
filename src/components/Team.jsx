@@ -25,7 +25,7 @@ export default function Team() {
         <h1 className="text-center pt-3" style={{ color: "white" }}>
           Team
         </h1>
-        <Row className="w-100 h-25">
+        <Row className="w-100 h-25 pb-4">
           <Col xs={12} sm={7}>
             <Row>
               {teamMembers.map((member) => (
@@ -42,7 +42,7 @@ export default function Team() {
           </Col>
           <Col>
             <Card
-              className="mb-3 shadow"
+              className="mb-5 shadow"
               style={{
                 fontSize: " 1.2rem",
                 backgroundColor: "#3797a4",
@@ -109,7 +109,6 @@ export default function Team() {
           </Col>
         </Row>
       </Container>
-
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 235">
         <path
           fill="#8ac6d1"

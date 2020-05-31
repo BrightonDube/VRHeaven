@@ -22,14 +22,15 @@ export default function Donate({ image }) {
           <Col md={7}>
             <img
               src={image}
-              className="img-responsive w-100 shadow rounded"
+              className="img-responsive w-100 mt-4 mb-4 shadow rounded"
               alt="art by Vitya"
             />
           </Col>
           <Col>
             <h4 className="text-justify">
-              At their world festival, young artists will and collaboratively
-              produce a dozen murals depicting their visions of heaven.
+              At their world festival, the young artists will co-imagine and
+              collaboratively produce a dozen murals that depict their visions
+              of heaven.
             </h4>
           </Col>
         </Row>

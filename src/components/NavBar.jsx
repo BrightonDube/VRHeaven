@@ -3,20 +3,20 @@ import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NavigationBar = styled(Navbar)`
   height: 5rem;
   font-size: 1.2rem;
-  background-color: #ffe3ed !important;
-  .navbar-toggler {
-    background-color: #58b4ae !important;
-    color: #58b4ae !important;
-  }
+  background-color: none !important;
   .collapse {
-    background-color: rgba(255, 227, 237, 0.8);
-    padding-left: 1rem;
+    width: 100%;
   }
+  .collapse,
+  .collapsing {
+    background-color: white;
+  }
+
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
@@ -37,32 +37,20 @@ const NavigationBar = styled(Navbar)`
   }
 `;
 
-export function NavBar() {
+export default function NavBar() {
   return (
     <NavigationBar
       collapseOnSelect
       expand="lg"
-      bg="light"
-      variant="dark"
-      fixed="top"
+      bg="transparent"
+      variant="light"
+      className="pt-2"
     >
       <Container>
-        <Link
-          className="navbar-brand"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <FontAwesomeIcon
-            icon="vr-cardboard"
-            size="2x"
-            className="d-inline-block align-top"
-          />
-          <span style={{ color: "palevioletred" }}> VR</span> Heaven
-        </Link>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="ml-auto"
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Link
@@ -87,17 +75,7 @@ export function NavBar() {
             >
               Events
             </Link>
-            <Link
-              className="nav-link"
-              activeClass="active"
-              to="gallery"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Art Gallery
-            </Link>
+
             <Link
               className="nav-link"
               activeClass="active"
