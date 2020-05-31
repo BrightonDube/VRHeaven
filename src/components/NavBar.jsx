@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Link } from "react-scroll";
 
 const NavigationBar = styled(Navbar)`

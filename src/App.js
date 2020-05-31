@@ -14,7 +14,7 @@ import {
 
 //components
 import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+
 import Team from "./components/Team.jsx";
 import Event from "./components/Event";
 import Process from "./components/Process";
