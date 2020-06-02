@@ -16,8 +16,10 @@ export default function Donate({ image }) {
       <Container>
         <Row id="donate">
           <Col className="text-justify">
-            <h1 className="text-center">Do you have a Heaven inside you?</h1>
-            <h5 className="text-center">
+            <h1 className="text-center pt-5 pb-5">
+              Do you have a Heaven inside you?
+            </h1>
+            <h5 className="text-center pb-4">
               You could join the children at their 2021 World Children’s
               Festival across from the U.S. Capitol. You can be an angel today
               and support the VR Heaven with{" "}

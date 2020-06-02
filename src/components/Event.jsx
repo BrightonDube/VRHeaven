@@ -12,7 +12,7 @@ const Wrapper = styled.section`
 
 export default function Event({ image }) {
   return (
-    <Wrapper as="Section" id="events" className="pt-2">
+    <Wrapper as="Section" id="events" className="pt-2 mt-3">
       <h1 className="text-center pt-3">World Children's Festival</h1>
       <Container>
         <Row className="align-items-center p-3">
