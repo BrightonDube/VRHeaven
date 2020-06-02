@@ -13,16 +13,23 @@ const Wrapper = styled.section`
     width: 100%;
   }
 `;
+const Img = styled.img`
+  width: 100vw;
+
+  border: solid 1px black;
+  object-fit: cover;
+  object-position: center center;
+`;
 
 export default function Division({ pic, text, creator, country }) {
   return (
-    <Wrapper as="Section">
+    <Wrapper as="Section" className="pt-2">
       <Row>
         <Container>
           <Col className="text-center p-5">
             <h2>{text}</h2>
-            <img
-              className="img-responsive shadow mt-4 mb-4"
+            <Img
+              className="img-responsive shadow mt-4 rounded"
               src={pic}
               alt={creator}
             />

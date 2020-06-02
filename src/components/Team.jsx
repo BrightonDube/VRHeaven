@@ -20,7 +20,7 @@ const Wrapper = styled.section`
 `;
 export default function Team() {
   return (
-    <Wrapper as="Section" id="team">
+    <Wrapper as="Section" id="team" className="pt-2">
       <Container fluid={true}>
         <h1 className="text-center pt-3" style={{ color: "white" }}>
           Team

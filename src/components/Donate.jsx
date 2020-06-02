@@ -12,7 +12,7 @@ const Wrapper = styled.section`
 
 export default function Donate({ image }) {
   return (
-    <Wrapper as="Section" id="about">
+    <Wrapper as="Section" id="about" className="pt-2">
       <Container>
         <Row id="donate">
           <Col className="text-justify">
@@ -102,8 +102,7 @@ export default function Donate({ image }) {
             </p>
 
             <p className="text-center">
-              <a href="https://icaf.org/contact.php">Let us</a> know if you want
-              to join the VR-Heaven Team
+              <a href="https://icaf.org/contact.php">Join</a> the VR-Heaven Team
             </p>
           </Col>
         </Row>

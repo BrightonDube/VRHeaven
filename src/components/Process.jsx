@@ -16,7 +16,7 @@ const Wrapper = styled.section`
 
 export default function Donate({ image }) {
   return (
-    <Wrapper as="Section">
+    <Wrapper as="Section" className="pt-2">
       <Container>
         <Row className="p-4 align-items-center">
           <Col md={7}>

@@ -34,6 +34,7 @@ import slide3 from "./images/Nigeria.jpg";
 import slide4 from "./images/CaliforniaJonathan.jpg";
 import slide5 from "./images/Egypt_Sherry_Atef_Georgy_12.jpg";
 import slide6 from "./images/WorldMural.jpg";
+import Arc from "./components/arc";
 
 const imageData = [
   {
@@ -113,7 +114,9 @@ function App() {
       <GlobalStyle />
       <Wrapper>
         <Main>
-          <div id="home">
+          <div id="home" className="container">
+            <Arc className="ml-5 mr-5 mt-5" />
+
             {imageData.map((item) => (
               <Division
                 pic={item.file}
