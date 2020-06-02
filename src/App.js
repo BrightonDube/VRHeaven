@@ -115,7 +115,7 @@ function App() {
       <Wrapper>
         <Main>
           <div id="home" className="container">
-            <Arc className="ml-5 mr-5 mt-5" />
+            <Arc className="ml-5 mr-5 mt-3" />
 
             {imageData.map((item) => (
               <Division

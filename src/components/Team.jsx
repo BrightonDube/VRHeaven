@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import styled from "styled-components";
+// eslint-disable-next-line
 import Section from "./Section";
 import girls from "../images/3_girls_2015_WCF.jpg";
 import teamMembers from "./teamMembers";

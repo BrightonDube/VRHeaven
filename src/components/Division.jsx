@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
-
+// eslint-disable-next-line
 import Section from "./Section";
 
 const Wrapper = styled.section`
@@ -23,10 +23,10 @@ const Img = styled.img`
 
 export default function Division({ pic, text, creator, country }) {
   return (
-    <Wrapper as="Section" className="pt-2">
+    <Wrapper as="Section">
       <Row>
         <Container>
-          <Col className="text-center p-5">
+          <Col className="text-center pr-5 pl-5 pb-5 pt-3">
             <h2>{text}</h2>
             <Img
               className="img-responsive shadow mt-4 rounded"
